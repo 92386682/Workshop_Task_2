@@ -1,7 +1,3 @@
-TEMPLATE
-WORKSHOP NO
-TASK
-
 Initial response/plan
 Set timeout and set interval Initially, I want to create a simple fractal illustration using recursion, adding a new layer to the fractal line every second. From the outset, I’m aware that this will involve scaling, transform, rotate and translation, but I feel like the main unknown will be setting the lines to appear at the end of the previous one, with continually changing and shrinking x/y coordinates. ALong the process of making this, I got distracted by the setinterval() function and never really made it beyond drawing a line and getting it to rotate based on time. So, I made a clock, building off using variable x y coordinates to follow a point.
 'function setup() {
