@@ -1,6 +1,15 @@
-Initial response/plan
+# Workshop 2: Coding Environments & Sharing Work
+Try using an IDE running locally on your own computer, rather than the p5.js web editor. VSCodium or VSCode are recommended. If you use  VSCodium, see this workaround to install the p5.vscode extensionLinks to an external site. and use this file Download this file(you can install the Live Preview extension through the application's extension manager). For VSCode, you can install both extensions from the application's extension manager.
+Make a p5.js sketch using the setTimeout and setInterval functions.
+Experiment with at least one new item from the from the p5.js documentationLinks to an external site..
+Create a GitHub loginLinks to an external site., make repositories for your three p5.js sketches (for workshop tasks 0, 1 and 2), and publish these projects as webpages using GitHub pages. Include a README file in each repository with a link to the webpage. Use the README files to document your work clearly.
+Post a link to your GitHub account on the course discussion board on Canvas.
+
+ttps://92386682.github.io/Workshop_Task_2/
+
+# Initial response/plan
 Set timeout and set interval Initially, I want to create a simple fractal illustration using recursion, adding a new layer to the fractal line every second. From the outset, I’m aware that this will involve scaling, transform, rotate and translation, but I feel like the main unknown will be setting the lines to appear at the end of the previous one, with continually changing and shrinking x/y coordinates. ALong the process of making this, I got distracted by the setinterval() function and never really made it beyond drawing a line and getting it to rotate based on time. So, I made a clock, building off using variable x y coordinates to follow a point.
-'function setup() {
+``function setup() {
   createCanvas(400, 400);
   strokeWeight(1)
  
@@ -17,7 +26,7 @@ function draw() {
   background(220);
   line(0, 0, x, x)
   line(x, x, 400, 0)
-}'
+}``
 
 EARLY DEVELOPMENT
 To begin, I needed to understand how to get the fractal “tree” to grow. After some playing around, I discovered that the line() function has an inbuilt functionality, and that by leaving x/y coordinates as variables, lines could move and follow each other. Whilst integrating this with the setInterval() function to create movement in the line, I was distracted by working out how javascript measures time and frames, and created a basic analogue clock analogue. Whilst not actually telling the time (unless started at exactly midday/midnight) the process of developing this utilized p5s text function, rotation based on two separate setIntervals, and fairly simple If/Else statements.
@@ -41,12 +50,14 @@ Attempting to have the angle of the branches change and grow via 'setTimeout () 
 
 It was around this time that the code completely stopped running. After two hours troubleshooting, eventually I used ChatGPT for the first time in this course, with the prompt “why is this code not working”, followed by the full code. It identified a fullstop that was placed where a comma should have been in the setTimeout function that, as well as recommending a more condensed format for the same function.  
 After a fair degree of experimentation, the dynamic growth of each branch at the end of the previous once was accomplished by a simple if() statement relating to branch length, and dynamic growth speeds achieved by the utilising Javascripts inbuilt frameCount to determind the length of the line, and putting the actual branching portion of the code behind ‘if (len > 160) {“. By dividing this count, the speed of the trees growth varies greater. 
-Writing retrospectively, it was around this time the code stopped addressing the workshop task itself, and as such at time of writing I’ve gone in and replaced the frameCount with 'setInterval (() => {
+Writing retrospectively, it was around this time the code stopped addressing the workshop task itself, and as such at time of writing I’ve gone in and replaced the frameCount with 
+
+``setInterval (() => {
   counter++
 }, 1000 / 100);'
 Additionally, as an endstate, I included 
 'if (counter > 5000) {
-      noLoop ()'
+      noLoop ()``
 Functionally, these accomplish similar goals, with the benefit that the code wouldn't just run until the software crashed. 
 
 
