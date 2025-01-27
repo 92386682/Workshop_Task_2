@@ -63,5 +63,7 @@ Additionally, as an endstate, I included
       noLoop ()``
 Functionally, these accomplish similar goals, with the benefit that the code wouldn't just run until the software crashed. 
 
-
+References
+https://www.youtube.com/watch?v=-wiverLQl1Q&list=PLRqwX-V7Uu6bXUJvjnMWGU5SmjhI-OXef
+Whilst the transcript of the conversation with chatGPT for this task was lost (no login), the referencing was limited only to finding syntax errors, and the changes were applied manually to the outstanding semi-colon. After feedback from my tutor, the use of AI was discontinued in all regards after this.
 
