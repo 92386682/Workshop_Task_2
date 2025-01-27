@@ -5,7 +5,7 @@ Experiment with at least one new item from the from the p5.js documentationLinks
 Create a GitHub loginLinks to an external site., make repositories for your three p5.js sketches (for workshop tasks 0, 1 and 2), and publish these projects as webpages using GitHub pages. Include a README file in each repository with a link to the webpage. Use the README files to document your work clearly.
 Post a link to your GitHub account on the course discussion board on Canvas.
 
-ttps://92386682.github.io/Workshop_Task_2/
+https://92386682.github.io/Workshop_Task_2/
 
 # Initial response/plan
 Set timeout and set interval Initially, I want to create a simple fractal illustration using recursion, adding a new layer to the fractal line every second. From the outset, I’m aware that this will involve scaling, transform, rotate and translation, but I feel like the main unknown will be setting the lines to appear at the end of the previous one, with continually changing and shrinking x/y coordinates. ALong the process of making this, I got distracted by the setinterval() function and never really made it beyond drawing a line and getting it to rotate based on time. So, I made a clock, building off using variable x y coordinates to follow a point.
