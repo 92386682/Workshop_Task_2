@@ -9,7 +9,9 @@ https://92386682.github.io/Workshop_Task_2/
 
 # Initial response/plan
 Set timeout and set interval Initially, I want to create a simple fractal illustration using recursion, adding a new layer to the fractal line every second. From the outset, I’m aware that this will involve scaling, transform, rotate and translation, but I feel like the main unknown will be setting the lines to appear at the end of the previous one, with continually changing and shrinking x/y coordinates. ALong the process of making this, I got distracted by the setinterval() function and never really made it beyond drawing a line and getting it to rotate based on time. So, I made a clock, building off using variable x y coordinates to follow a point.
-``function setup() {
+
+````
+function setup() {
   createCanvas(400, 400);
   strokeWeight(1)
  
@@ -26,7 +28,8 @@ function draw() {
   background(220);
   line(0, 0, x, x)
   line(x, x, 400, 0)
-}``
+} 
+````
 
 EARLY DEVELOPMENT
 To begin, I needed to understand how to get the fractal “tree” to grow. After some playing around, I discovered that the line() function has an inbuilt functionality, and that by leaving x/y coordinates as variables, lines could move and follow each other. Whilst integrating this with the setInterval() function to create movement in the line, I was distracted by working out how javascript measures time and frames, and created a basic analogue clock analogue. Whilst not actually telling the time (unless started at exactly midday/midnight) the process of developing this utilized p5s text function, rotation based on two separate setIntervals, and fairly simple If/Else statements.
